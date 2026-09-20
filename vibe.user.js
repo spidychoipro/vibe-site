@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         vibe-site unlocker
 // @namespace    https://github.com/spidychoipro/vibe-site
-// @version      0.1.0
+// @version      0.2.0
 // @description  빈 페이지 뒤에 숨어있는 Vibe Coding Manifesto를 드러내는 스크립트. 설치하면 마법이 일어난다.
 // @author       spidychoipro
 // @match        https://spidychoipro.github.io/vibe-site/*
@@ -9,6 +9,7 @@
 // @match        http://127.0.0.1:8000/*
 // @run-at       document-idle
 // @grant        none
+// @noframes
 // @downloadURL  https://spidychoipro.github.io/vibe-site/vibe.user.js
 // @updateURL    https://spidychoipro.github.io/vibe-site/vibe.user.js
 // ==/UserScript==
@@ -178,7 +179,7 @@
 
   function buildManifesto() {
     appendLine('');
-    const meta = appendLine('<span class="dim">// 아무것도 없어 보였지?</span>');
+    appendLine('<span class="dim">// 아무것도 없어 보였지?</span>');
 
     const title = document.createElement('div');
     title.className = 'title fade';
@@ -210,7 +211,7 @@
 
     const footer = document.createElement('footer');
     footer.className = 'fade';
-    footer.innerHTML = 'vibe-site v0.1.0 · <a href="https://spidychoipro.github.io/vibe-site/vibe.user.js" target="_blank">vibe.user.js</a>';
+    footer.innerHTML = 'vibe-site v0.2.0 · <a href="https://spidychoipro.github.io/vibe-site/vibe.user.js" target="_blank">vibe.user.js</a>';
     root.appendChild(footer);
 
     setTimeout(showWithFade, 60, title);
@@ -219,7 +220,15 @@
     setTimeout(showWithFade, 360, footer);
   }
 
+  function isTargetBlank() {
+    if (!document.body) return false;
+    if ((document.title || '').trim() !== '' && (document.title || '').trim() !== '.') return false;
+    if (document.body.childElementCount > 0) return false;
+    return (document.body.textContent || '').trim() === '';
+  }
+
   function start() {
+    if (!isTargetBlank()) return;
     injectStyle();
     buildRoot();
     appendLine('');
