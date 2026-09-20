@@ -23,6 +23,8 @@
 
 **访问 → 白色虚空。安装脚本 → 虚空开始说话。**
 
+**[⬇️ 安装脚本](https://spidychoipro.github.io/vibe-site/vibe.user.js)** — 安装 Tampermonkey 后在浏览器中打开即可看到安装界面。
+
 [English](../..) · [한국어](README.ko.md) · [中文](README.zh.md) · [日本語](README.ja.md)
 
 </div>
@@ -34,8 +36,8 @@
 | 步骤 | 操作 |
 |---|---|
 | 1 | 为浏览器安装 [Tampermonkey](https://www.tampermonkey.net/) |
-| 2 | 打开用户脚本 → [vibe.user.js](https://spidychoipro.github.io/vibe-site/vibe.user.js) |
-| 3 | 在安装界面确认 |
+| 2 | 点击 **⬇️ [安装脚本](https://spidychoipro.github.io/vibe-site/vibe.user.js)** 下载 `vibe.user.js` |
+| 3 | 在 Tampermonkey 安装界面确认 |
 | 4 | 访问 → <https://spidychoipro.github.io/vibe-site/> |
 | 5 | 看着终端启动。小声惊叹。 |
 

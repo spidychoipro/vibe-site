@@ -23,6 +23,8 @@ Manifesto**를 펼치는 모든 경험은 [Tampermonkey](https://www.tampermonke
 
 **방문 → 텅 빈 공허. 스크립트 설치 → 공허가 말을 건다.**
 
+**[⬇️ 스크립트 설치](https://spidychoipro.github.io/vibe-site/vibe.user.js)** — Tampermonkey 설치 후 브라우저에서 열면 설치 화면이 나온다.
+
 [English](../..) · [한국어](README.ko.md) · [中文](README.zh.md) · [日本語](README.ja.md)
 
 </div>
@@ -34,8 +36,8 @@ Manifesto**를 펼치는 모든 경험은 [Tampermonkey](https://www.tampermonke
 | 단계 | 동작 |
 |---|---|
 | 1 | 브라우저에 [Tampermonkey](https://www.tampermonkey.net/) 설치 |
-| 2 | 유저스크립트 열기 → [vibe.user.js](https://spidychoipro.github.io/vibe-site/vibe.user.js) |
-| 3 | 설치 화면에서 확인 |
+| 2 | **⬇️ [스크립트 설치](https://spidychoipro.github.io/vibe-site/vibe.user.js)** 를 눌러 `vibe.user.js` 다운로드 |
+| 3 | Tampermonkey 설치 화면에서 확인 |
 | 4 | 접속 → <https://spidychoipro.github.io/vibe-site/> |
 | 5 | 터미널이 부팅되는 것을 지켜보자. 조용히 감탄하자. |
 

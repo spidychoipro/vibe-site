@@ -24,6 +24,8 @@
 
 **訪問 → 白い虚空。スクリプトを入れる → 虚空が語り出す。**
 
+**[⬇️ スクリプトをインストール](https://spidychoipro.github.io/vibe-site/vibe.user.js)** — Tampermonkey 導入後、ブラウザで開くとインストール画面が表示されます。
+
 [English](../..) · [한국어](README.ko.md) · [中文](README.zh.md) · [日本語](README.ja.md)
 
 </div>
@@ -35,7 +37,7 @@
 | 手順 | 操作 |
 |---|---|
 | 1 | ブラウザに [Tampermonkey](https://www.tampermonkey.net/) をインストール |
-| 2 | ユーザースクリプトを開く → [vibe.user.js](https://spidychoipro.github.io/vibe-site/vibe.user.js) |
+| 2 | **⬇️ [スクリプトをインストール](https://spidychoipro.github.io/vibe-site/vibe.user.js)** をクリックして `vibe.user.js` をダウンロード |
 | 3 | インストール画面で確認 |
 | 4 | アクセス → <https://spidychoipro.github.io/vibe-site/> |
 | 5 | ターミナルが起動するのを見守る。小声で感嘆する。 |
