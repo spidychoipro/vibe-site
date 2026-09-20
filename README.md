@@ -23,6 +23,8 @@ terminal that unfolds the **Vibe Coding Manifesto** — lives inside a
 
 **Visit → white void. Install the script → the void speaks.**
 
+**[⬇️ Install the Script](https://spidychoipro.github.io/vibe-site/vibe.user.js)** — open it in your browser after installing Tampermonkey.
+
 [English](../..) · [한국어](README.ko.md) · [中文](README.zh.md) · [日本語](README.ja.md)
 
 </div>
@@ -34,8 +36,8 @@ terminal that unfolds the **Vibe Coding Manifesto** — lives inside a
 | Step | Action |
 |---|---|
 | 1 | Install [Tampermonkey](https://www.tampermonkey.net/) for your browser |
-| 2 | Open the userscript → [vibe.user.js](https://spidychoipro.github.io/vibe-site/vibe.user.js) |
-| 3 | Confirm the install screen |
+| 2 | Click **⬇️ [Install the Script](https://spidychoipro.github.io/vibe-site/vibe.user.js)** to download `vibe.user.js` |
+| 3 | Confirm the Tampermonkey install screen |
 | 4 | Visit → <https://spidychoipro.github.io/vibe-site/> |
 | 5 | Watch the terminal boot. Swear under your breath. |
 
