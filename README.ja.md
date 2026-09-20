@@ -34,13 +34,22 @@
 
 ## 📦 クイックスタート
 
-| 手順 | 操作 |
+クリック3回で完了します。
+
+| ブラウザ | ワンクリックインストール |
 |---|---|
-| 1 | ブラウザに [Tampermonkey](https://www.tampermonkey.net/) をインストール |
-| 2 | **⬇️ [スクリプトをインストール](https://spidychoipro.github.io/vibe-site/vibe.user.js)** をクリックして `vibe.user.js` をダウンロード |
-| 3 | インストール画面で確認 |
-| 4 | アクセス → <https://spidychoipro.github.io/vibe-site/> |
-| 5 | ターミナルが起動するのを見守る。小声で感嘆する。 |
+| Chrome | [Tampermonkey (Web Store)](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) |
+| Firefox | [Tampermonkey (Add-ons)](https://addons.mozilla.org/firefox/addon/tampermonkey/) |
+| Edge | [Tampermonkey (Add-ons)](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) |
+| Safari | [Tampermonkey (App Store)](https://apps.apple.com/app/tampermonkey-classic/id1482490089) |
+
+そして：
+
+| 手順 | クリック |
+|---|---|
+| 1 | 上のストアリンクを開く → **追加**をクリック |
+| 2 | **⬇️ [スクリプトをインストール](https://spidychoipro.github.io/vibe-site/vibe.user.js)** を開く → **インストール**をクリック |
+| 3 | アクセス → https://spidychoipro.github.io/vibe-site/。ターミナル起動を見守って小さく感嘆する |
 
 > **スクリプトがない？** 白いページが見えるはず。正常です。それこそが本題です。
 

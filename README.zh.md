@@ -33,13 +33,22 @@
 
 ## 📦 快速开始
 
-| 步骤 | 操作 |
+点三下鼠标就搞定。
+
+| 浏览器 | 一键安装 |
 |---|---|
-| 1 | 为浏览器安装 [Tampermonkey](https://www.tampermonkey.net/) |
-| 2 | 点击 **⬇️ [安装脚本](https://spidychoipro.github.io/vibe-site/vibe.user.js)** 下载 `vibe.user.js` |
-| 3 | 在 Tampermonkey 安装界面确认 |
-| 4 | 访问 → <https://spidychoipro.github.io/vibe-site/> |
-| 5 | 看着终端启动。小声惊叹。 |
+| Chrome | [Tampermonkey (Web Store)](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) |
+| Firefox | [Tampermonkey (Add-ons)](https://addons.mozilla.org/firefox/addon/tampermonkey/) |
+| Edge | [Tampermonkey (Add-ons)](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) |
+| Safari | [Tampermonkey (App Store)](https://apps.apple.com/app/tampermonkey-classic/id1482490089) |
+
+接着：
+
+| 步骤 | 点击 |
+|---|---|
+| 1 | 打开上面的商店链接 → 点**添加** |
+| 2 | 打开 **⬇️ [安装脚本](https://spidychoipro.github.io/vibe-site/vibe.user.js)** → 点**安装** |
+| 3 | 访问 → https://spidychoipro.github.io/vibe-site/，看着终端启动，小声惊叹 |
 
 > **没有脚本？** 你会看到一片白页。这是正常的。这正是本意。
 

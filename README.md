@@ -33,13 +33,22 @@ terminal that unfolds the **Vibe Coding Manifesto** — lives inside a
 
 ## 📦 Quick Start
 
-| Step | Action |
+Three clicks and you're done.
+
+| Browser | One-click install |
 |---|---|
-| 1 | Install [Tampermonkey](https://www.tampermonkey.net/) for your browser |
-| 2 | Click **⬇️ [Install the Script](https://spidychoipro.github.io/vibe-site/vibe.user.js)** to download `vibe.user.js` |
-| 3 | Confirm the Tampermonkey install screen |
-| 4 | Visit → <https://spidychoipro.github.io/vibe-site/> |
-| 5 | Watch the terminal boot. Swear under your breath. |
+| Chrome | [Tampermonkey (Web Store)](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) |
+| Firefox | [Tampermonkey (Add-ons)](https://addons.mozilla.org/firefox/addon/tampermonkey/) |
+| Edge | [Tampermonkey (Add-ons)](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) |
+| Safari | [Tampermonkey (App Store)](https://apps.apple.com/app/tampermonkey-classic/id1482490089) |
+
+Then:
+
+| Step | Click |
+|---|---|
+| 1 | Open the store link above → press **Add**. |
+| 2 | Open **⬇️ [Install the Script](https://spidychoipro.github.io/vibe-site/vibe.user.js)** → press **Install**. |
+| 3 | Visit → <https://spidychoipro.github.io/vibe-site/>. Watch the terminal boot. Swear under your breath. |
 
 > **No script?** You will see a blank white page. That is correct. That is the point.
 

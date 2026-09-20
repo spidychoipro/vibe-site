@@ -22,9 +22,22 @@
 
 ## 설치 방법
 
-1. 브라우저에 [Tampermonkey](https://www.tampermonkey.net/) 설치
-2. [⬇️ 스크립트 설치](https://spidychoipro.github.io/vibe-site/vibe.user.js) 링크 열기 → 설치 화면에서 `vibe.user.js` 설치
-3. 페이지 방문 → 터미널 부팅 후 매니페스토 표시
+딸깍 세 번이면 끝입니다.
+
+| 브라우저 | 원클릭 설치 |
+| --- | --- |
+| Chrome | [Tampermonkey (Web Store)](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) |
+| Firefox | [Tampermonkey (Add-ons)](https://addons.mozilla.org/firefox/addon/tampermonkey/) |
+| Edge | [Tampermonkey (Add-ons)](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) |
+| Safari | [Tampermonkey (App Store)](https://apps.apple.com/app/tampermonkey-classic/id1482490089) |
+
+그 다음:
+
+| 단계 | 클릭 |
+| --- | --- |
+| 1 | 위 스토어 링크 열기 → **추가** 클릭 |
+| 2 | **⬇️ [스크립트 설치](https://spidychoipro.github.io/vibe-site/vibe.user.js)** 열기 → **설치** 클릭 |
+| 3 | 사이트 접속 → 터미널 부팅 & 매니페스토 표시 |
 
 ## 동작 원리
 
