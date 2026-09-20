@@ -100,10 +100,10 @@
   ];
 
   const BOOT = [
-    '<span class="prompt">$</span> connecting to vibe... ok',
-    '<span class="prompt">$</span> decrypting blank page... ok',
-    '<span class="prompt">$</span> loading manifesto... ok',
-    '<span class="prompt">$</span> climbing the white wall... vroom vroom'
+    { prompt: '$', msg: 'connecting to vibe... ok' },
+    { prompt: '$', msg: 'decrypting blank page... ok' },
+    { prompt: '$', msg: 'loading manifesto... ok' },
+    { prompt: '$', msg: 'climbing the white wall... vroom vroom' }
   ];
 
   let root;
@@ -133,20 +133,25 @@
     return line;
   }
 
-  function typeText(text, onDone, speed) {
-    const line = document.createElement('div');
-    line.className = 'line';
+  function typeText(bootLine, onDone, speed) {
+    const prompt = document.createElement('span');
+    prompt.className = 'prompt';
+    prompt.textContent = bootLine.prompt + ' ';
     const span = document.createElement('span');
     span.className = 'txt';
     const cursor = document.createElement('span');
     cursor.className = 'cur';
+    const line = document.createElement('div');
+    line.className = 'line';
+    line.appendChild(prompt);
     line.appendChild(span);
     line.appendChild(cursor);
     root.appendChild(line);
+    const text = bootLine.msg;
     let i = 0;
     const spd = speed || 28;
     const timer = setInterval(() => {
-      span.innerHTML = text.slice(0, i);
+      span.textContent = text.slice(0, i);
       root.scrollTop = root.scrollHeight;
       i += 1;
       if (i > text.length) {
