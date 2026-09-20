@@ -25,7 +25,7 @@ Manifesto**를 펼치는 모든 경험은 [Tampermonkey](https://www.tampermonke
 
 **[⬇️ 스크립트 설치](https://spidychoipro.github.io/vibe-site/vibe.user.js)** — Tampermonkey 설치 후 브라우저에서 열면 설치 화면이 나온다.
 
-[English](../..) · [한국어](README.ko.md) · [中文](README.zh.md) · [日本語](README.ja.md)
+[English](README.md) · [한국어](README.ko.md) · [中文](README.zh.md) · [日本語](README.ja.md)
 
 </div>
 
@@ -53,14 +53,13 @@ Manifesto**를 펼치는 모든 경험은 [Tampermonkey](https://www.tampermonke
 
 이 프로젝트는 기존의 프론트엔드 전달 방식을 뒤집는다:
 
-```
-┌────────────────────────────┐        ┌────────────────────────────┐
-│  GitHub Pages (index.html) │        │  Tampermonkey (vibe.user.js) │
-│                            │        │                            │
-│  <body></body>             │  ◄────  │  @match github.io/vibe-site │
-│  소스: 말 그대로 없음       │        │  콘텐츠: 전부 내장          │
-└────────────────────────────┘        └────────────────────────────┘
-```
+| 구성 요소 | 담고 있는 것 |
+|---|---|
+| GitHub Pages — `index.html` | `<body></body>` — 진짜 텅 빈 문서 |
+| Tampermonkey — `vibe.user.js` | `@match` 규칙 + 전체 경험 데이터 |
+| 너의 브라우저 + 스크립트 | 터미널 부팅, 매니페스토 전개 |
+
+<p align="center"><code>빈 페이지 ──▶ (스크립트 주입) ──▶ 마법</code></p>
 
 1. **`index.html`** 은 진짜 비어 있는 문서다. 흰 배경, 빈 `<body>`.
    소스를 열어봐도 아무것도 안 보인다 — 아무것도 없으니까.
@@ -76,20 +75,25 @@ Manifesto**를 펼치는 모든 경험은 [Tampermonkey](https://www.tampermonke
 
 ```
 vibe-site/
-├── index.html      # 의도적으로 비운 빈 페이지
-├── vibe.user.js    # 유저스크립트 — 전체 경험이 여기에 담겨 있음
-└── README.md       # 지금 보고 있는 문서
+├── index.html          # 의도적으로 비운 빈 페이지
+├── vibe.user.js        # 유저스크립트 — 전체 경험이 여기에 담겨 있음
+├── README.md           # 문서 (영문)
+├── README.ko.md        # 문서 (한국어) — 지금 보고 있는 문서
+├── README.zh.md        # 문서 (中文)
+├── README.ja.md        # 문서 (日本語)
+└── LICENSE             # MIT
 ```
 
 ## 💻 로컬 개발
 
-프로젝트를 서빙하고 `@match localhost:8000` 을 활용한다:
+프로젝트를 로컬로 서빙하면, 스크립트에 이미 `@match localhost:8000` 규칙이
+있어 바로 확인할 수 있다:
 
 ```bash
 npx serve .      # → http://localhost:8000
 ```
 
-그 다음 스크립트 로컬 복사본을 Tampermonkey에 설치한다.
+먼저 Tampermonkey에 로컬 버전의 스크립트를 설치해야 한다.
 
 스크립트는 **진짜 빈 페이지에서만** 활성화된다 — 8000 포트에 우연히 떠 있는
 다른 앱을 가로채지는 않는다.
@@ -112,11 +116,11 @@ npx serve .      # → http://localhost:8000
 - **프레임 차단:** `@noframes` 로 임베디드 iframe 내 실행을 차단한다.
 - **진짜-빈-화면 가드:** `isTargetBlank` 런타임 검사로 페이지가 진짜로 빈
   경우에만 작동하도록 하여, 다른 로컬 서비스 오작동을 막는다.
-- **공급망:** 업데이트는 `@updateURL/@downloadURL` 을 통해 이 저장소로
-  돌아온다. 저장소 쓰기 권한자는 모든 설치 클라이언트에 코드를 배포할 수
-  있다 — `spidychoipro` 계정(`2FA`)을 유일한 신뢰 앵커로 취급하라.
-- **이것은 오브스큐리티이지 보안이 아니다:** "숨겨진" 콘텐츠는 유저스크립트
-  안에 평문으로 있다. 이 패턴을 비밀 정보 저장에 **재사용하지 마라.**
+- **공급망:** 업데이트는 `@updateURL/@downloadURL` 을 거쳐 이 저장소로
+  돌아온다. 즉 저장소에 쓰기 권한이 있는 사람은 모든 설치자에게 코드를 배포할
+  수 있다 — `spidychoipro` 계정(`2FA` 켜두기)이 유일한 신뢰 지점이다.
+- **이건 '숨김'이지, 진짜 보안이 아니다:** "숨겨진" 콘텐츠는 유저스크립트
+  안에 평문으로 들어 있다. 비밀 정보를 보관하는 데 이 방식을 **쓰지 마라.**
 
 ## ⚖️ 라이선스
 

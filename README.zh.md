@@ -17,7 +17,7 @@
 ```
 
 `vibe-site` 是一个 GitHub Pages 实验项目，页面**真正**保持空白。
-没有内容、没有负载、源代码里什么都没有。从终端启动到展开
+没有内容、没有资源，源代码里什么都没有。从终端启动到展开
 **Vibe Coding Manifesto** 的全部体验，都封装在
 [Tampermonkey](https://www.tampermonkey.net/) 用户脚本里。
 
@@ -25,7 +25,7 @@
 
 **[⬇️ 安装脚本](https://spidychoipro.github.io/vibe-site/vibe.user.js)** — 安装 Tampermonkey 后在浏览器中打开即可看到安装界面。
 
-[English](../..) · [한국어](README.ko.md) · [中文](README.zh.md) · [日本語](README.ja.md)
+[English](README.md) · [한국어](README.ko.md) · [中文](README.zh.md) · [日本語](README.ja.md)
 
 </div>
 
@@ -53,14 +53,13 @@
 
 这个项目颠覆了传统的前端交付方式：
 
-```
-┌────────────────────────────┐        ┌────────────────────────────┐
-│  GitHub Pages (index.html) │        │  Tampermonkey (vibe.user.js) │
-│                            │        │                            │
-│  <body></body>             │  ◄────  │  @match github.io/vibe-site │
-│  源码：真的什么都没有       │        │  内容：全部内嵌              │
-└────────────────────────────┘        └────────────────────────────┘
-```
+| 组件 | 内容 |
+|---|---|
+| GitHub Pages — `index.html` | `<body></body>` — 真正空白的文档 |
+| Tampermonkey — `vibe.user.js` | `@match` 规则 + 完整的体验数据 |
+| 你的浏览器 + 脚本 | 启动终端，展开宣言 |
+
+<p align="center"><code>空白页面 ──▶ (脚本注入) ──▶ 魔法</code></p>
 
 1. **`index.html`** 是一个真正空白的文档。白色背景，空的 `<body>`。
    查看源码什么都看不到——因为本来就没有。
@@ -75,20 +74,24 @@
 
 ```
 vibe-site/
-├── index.html      # 刻意留空的页面
-├── vibe.user.js    # 用户脚本 — 全部体验都在这里
-└── README.md       # 你现在看的这份文档
+├── index.html          # 刻意留空的页面
+├── vibe.user.js        # 用户脚本 — 全部体验都在这里
+├── README.md           # 文档 (English)
+├── README.ko.md        # 文档 (한국어)
+├── README.zh.md        # 文档 (中文) — 你现在看的这份
+├── README.ja.md        # 文档 (日本語)
+└── LICENSE             # MIT
 ```
 
 ## 💻 本地开发
 
-启动项目并利用内置的 `@match localhost:8000`：
+在本地启动项目，利用脚本中自带的 `@match localhost:8000` 直接验证：
 
 ```bash
 npx serve .      # → http://localhost:8000
 ```
 
-然后在 Tampermonkey 中安装本地的脚本副本。
+先在 Tampermonkey 中安装一份本地版本的脚本。
 
 脚本只在**真正空白的页面**上激活——不会劫持你在 8000 端口偶然运行的其他应用。
 

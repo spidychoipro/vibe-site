@@ -25,7 +25,7 @@ terminal that unfolds the **Vibe Coding Manifesto** — lives inside a
 
 **[⬇️ Install the Script](https://spidychoipro.github.io/vibe-site/vibe.user.js)** — open it in your browser after installing Tampermonkey.
 
-[English](../..) · [한국어](README.ko.md) · [中文](README.zh.md) · [日本語](README.ja.md)
+[English](README.md) · [한국어](README.ko.md) · [中文](README.zh.md) · [日本語](README.ja.md)
 
 </div>
 
@@ -53,19 +53,18 @@ terminal that unfolds the **Vibe Coding Manifesto** — lives inside a
 
 This project inverts conventional front-end delivery:
 
-```
-┌────────────────────────────┐        ┌────────────────────────────┐
-│  GitHub Pages (index.html) │        │  Tampermonkey (vibe.user.js) │
-│                            │        │                            │
-│  <body></body>             │  ◄────  │  @match github.io/vibe-site │
-│  Source: literally nothing │        │  Content: fully embedded    │
-└────────────────────────────┘        └────────────────────────────┘
-```
+| Component | What it holds |
+|---|---|
+| GitHub Pages — `index.html` | `<body></body>` — a truly empty document |
+| Tampermonkey — `vibe.user.js` | `@match` rule + the full experience payload |
+| Your browser + script | Boots the terminal, unfolds the manifesto |
+
+<p align="center"><code>blank page ──▶ (script injects) ──▶ magic</code></p>
 
 1. **`index.html`** is a real, empty document. White background, empty `<body>`.
    Inspecting the source reveals nothing — because there is nothing.
 2. **`vibe.user.js`** carries all content (CSS + boot sequence + manifesto) as an
-   embeddded payload. It matches the Pages URL, verifies the page is truly blank,
+   embedded payload. It matches the Pages URL, verifies the page is truly blank,
    then injects the experience.
 3. **Auto-update:** bumping `@version` and pushing updates the script for every
    installed user via Tampermonkey's `@updateURL`.
@@ -77,9 +76,13 @@ only to those in on the secret.
 
 ```
 vibe-site/
-├── index.html      # Intentionally empty white page
-├── vibe.user.js    # Userscript — the entire experience lives here
-└── README.md       # You are here
+├── index.html          # Intentionally empty white page
+├── vibe.user.js        # Userscript — the entire experience lives here
+├── README.md           # Docs (English) — you are here
+├── README.ko.md        # Docs (한국어)
+├── README.zh.md        # Docs (中文)
+├── README.ja.md        # Docs (日本語)
+└── LICENSE             # MIT
 ```
 
 ## 💻 Local Development
