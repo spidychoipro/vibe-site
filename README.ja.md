@@ -19,14 +19,14 @@
 `vibe-site` は、ページが*本当に*空白のままの GitHub Pages 実験プロジェクト。
 コンテンツもペイロードも、ソースには何もない。ターミナルが起動して
 **Vibe Coding Manifesto** を展開する体験のすべては、
-[Tampermonkey](https://www.tampermonkey.net/) ユーザースクリプトの中に
+<a href="https://www.tampermonkey.net/" target="_blank" rel="noopener noreferrer">Tampermonkey</a> ユーザースクリプトの中に
 埋め込まれている。
 
 **訪問 → 白い虚空。スクリプトを入れる → 虚空が語り出す。**
 
-**[⬇️ スクリプトをインストール](https://spidychoipro.github.io/vibe-site/vibe.user.js)** — Tampermonkey 導入後、ブラウザで開くとインストール画面が表示されます。
+**⬇️ <a href="https://spidychoipro.github.io/vibe-site/vibe.user.js" target="_blank" rel="noopener noreferrer">スクリプトをインストール</a>** — Tampermonkey 導入後、ブラウザで開くとインストール画面が表示されます。
 
-[English](README.md) · [한국어](README.ko.md) · [中文](README.zh.md) · [日本語](README.ja.md)
+<a href="README.md" target="_blank" rel="noopener noreferrer">English</a> · <a href="README.ko.md" target="_blank" rel="noopener noreferrer">한국어</a> · <a href="README.zh.md" target="_blank" rel="noopener noreferrer">中文</a> · <a href="README.ja.md" target="_blank" rel="noopener noreferrer">日本語</a>
 
 </div>
 
@@ -38,26 +38,26 @@
 
 | ブラウザ | ワンクリックインストール |
 |---|---|
-| Chrome | [Tampermonkey (Web Store)](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) |
-| Firefox | [Tampermonkey (Add-ons)](https://addons.mozilla.org/firefox/addon/tampermonkey/) |
-| Edge | [Tampermonkey (Add-ons)](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) |
-| Safari | [Tampermonkey (App Store)](https://apps.apple.com/app/tampermonkey-classic/id1482490089) |
+| Chrome | <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank" rel="noopener noreferrer">Tampermonkey (Web Store)</a> |
+| Firefox | <a href="https://addons.mozilla.org/firefox/addon/tampermonkey/" target="_blank" rel="noopener noreferrer">Tampermonkey (Add-ons)</a> |
+| Edge | <a href="https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd" target="_blank" rel="noopener noreferrer">Tampermonkey (Add-ons)</a> |
+| Safari | <a href="https://apps.apple.com/app/tampermonkey-classic/id1482490089" target="_blank" rel="noopener noreferrer">Tampermonkey (App Store)</a> |
 
 そして：
 
 | 手順 | クリック |
 |---|---|
 | 1 | 上のストアリンクを開く → **追加**をクリック |
-| 2 | **⬇️ [スクリプトをインストール](https://spidychoipro.github.io/vibe-site/vibe.user.js)** を開く → **インストール**をクリック |
-| 3 | アクセス → https://spidychoipro.github.io/vibe-site/。ターミナル起動を見守って小さく感嘆する |
+| 2 | **⬇️ <a href="https://spidychoipro.github.io/vibe-site/vibe.user.js" target="_blank" rel="noopener noreferrer">スクリプトをインストール</a>** を開く → **インストール**をクリック |
+| 3 | アクセス → <a href="https://spidychoipro.github.io/vibe-site/" target="_blank" rel="noopener noreferrer">https://spidychoipro.github.io/vibe-site/</a>。ターミナル起動を見守って小さく感嘆する |
 
 > **スクリプトがない？** 白いページが見えるはず。正常です。それこそが本題です。
 
 ## 🌐 リソース
 
-- **ライブページ:** <https://spidychoipro.github.io/vibe-site/>
-- **ユーザースクリプト:** <https://spidychoipro.github.io/vibe-site/vibe.user.js>
-- **リポジトリ:** <https://github.com/spidychoipro/vibe-site>
+- **ライブページ:** <a href="https://spidychoipro.github.io/vibe-site/" target="_blank" rel="noopener noreferrer">https://spidychoipro.github.io/vibe-site/</a>
+- **ユーザースクリプト:** <a href="https://spidychoipro.github.io/vibe-site/vibe.user.js" target="_blank" rel="noopener noreferrer">https://spidychoipro.github.io/vibe-site/vibe.user.js</a>
+- **リポジトリ:** <a href="https://github.com/spidychoipro/vibe-site" target="_blank" rel="noopener noreferrer">https://github.com/spidychoipro/vibe-site</a>
 
 ## 🧠 仕組み
 
@@ -137,7 +137,7 @@ npx serve .      # → http://localhost:8000
 
 ## ⚖️ ライセンス
 
-MIT — 好きに使って、楽しんで。 [LICENSE](LICENSE) 参照。
+MIT — 好きに使って、楽しんで。 <a href="LICENSE" target="_blank" rel="noopener noreferrer">LICENSE</a> 参照。
 
 ---
 

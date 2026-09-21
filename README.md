@@ -19,13 +19,13 @@
 `vibe-site` is a GitHub Pages experiment where the page is *genuinely* blank.
 No content, no payload, nothing in the source. The entire experience — a booting
 terminal that unfolds the **Vibe Coding Manifesto** — lives inside a
-[Tampermonkey](https://www.tampermonkey.net/) userscript.
+<a href="https://www.tampermonkey.net/" target="_blank" rel="noopener noreferrer">Tampermonkey</a> userscript.
 
 **Visit → white void. Install the script → the void speaks.**
 
-**[⬇️ Install the Script](https://spidychoipro.github.io/vibe-site/vibe.user.js)** — open it in your browser after installing Tampermonkey.
+**⬇️ <a href="https://spidychoipro.github.io/vibe-site/vibe.user.js" target="_blank" rel="noopener noreferrer">Install the Script</a>** — open it in your browser after installing Tampermonkey.
 
-[English](README.md) · [한국어](README.ko.md) · [中文](README.zh.md) · [日本語](README.ja.md)
+<a href="README.md" target="_blank" rel="noopener noreferrer">English</a> · <a href="README.ko.md" target="_blank" rel="noopener noreferrer">한국어</a> · <a href="README.zh.md" target="_blank" rel="noopener noreferrer">中文</a> · <a href="README.ja.md" target="_blank" rel="noopener noreferrer">日本語</a>
 
 </div>
 
@@ -37,26 +37,26 @@ Three clicks and you're done.
 
 | Browser | One-click install |
 |---|---|
-| Chrome | [Tampermonkey (Web Store)](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) |
-| Firefox | [Tampermonkey (Add-ons)](https://addons.mozilla.org/firefox/addon/tampermonkey/) |
-| Edge | [Tampermonkey (Add-ons)](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) |
-| Safari | [Tampermonkey (App Store)](https://apps.apple.com/app/tampermonkey-classic/id1482490089) |
+| Chrome | <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank" rel="noopener noreferrer">Tampermonkey (Web Store)</a> |
+| Firefox | <a href="https://addons.mozilla.org/firefox/addon/tampermonkey/" target="_blank" rel="noopener noreferrer">Tampermonkey (Add-ons)</a> |
+| Edge | <a href="https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd" target="_blank" rel="noopener noreferrer">Tampermonkey (Add-ons)</a> |
+| Safari | <a href="https://apps.apple.com/app/tampermonkey-classic/id1482490089" target="_blank" rel="noopener noreferrer">Tampermonkey (App Store)</a> |
 
 Then:
 
 | Step | Click |
 |---|---|
 | 1 | Open the store link above → press **Add**. |
-| 2 | Open **⬇️ [Install the Script](https://spidychoipro.github.io/vibe-site/vibe.user.js)** → press **Install**. |
-| 3 | Visit → <https://spidychoipro.github.io/vibe-site/>. Watch the terminal boot. Swear under your breath. |
+| 2 | Open **⬇️ <a href="https://spidychoipro.github.io/vibe-site/vibe.user.js" target="_blank" rel="noopener noreferrer">Install the Script</a>** → press **Install**. |
+| 3 | Visit → <a href="https://spidychoipro.github.io/vibe-site/" target="_blank" rel="noopener noreferrer">https://spidychoipro.github.io/vibe-site/</a>. Watch the terminal boot. Swear under your breath. |
 
 > **No script?** You will see a blank white page. That is correct. That is the point.
 
 ## 🌐 Resources
 
-- **Live page:** <https://spidychoipro.github.io/vibe-site/>
-- **Userscript:** <https://spidychoipro.github.io/vibe-site/vibe.user.js>
-- **Repository:** <https://github.com/spidychoipro/vibe-site>
+- **Live page:** <a href="https://spidychoipro.github.io/vibe-site/" target="_blank" rel="noopener noreferrer">https://spidychoipro.github.io/vibe-site/</a>
+- **Userscript:** <a href="https://spidychoipro.github.io/vibe-site/vibe.user.js" target="_blank" rel="noopener noreferrer">https://spidychoipro.github.io/vibe-site/vibe.user.js</a>
+- **Repository:** <a href="https://github.com/spidychoipro/vibe-site" target="_blank" rel="noopener noreferrer">https://github.com/spidychoipro/vibe-site</a>
 
 ## 🧠 How It Works
 
@@ -133,7 +133,7 @@ All content is plain data at the top of `vibe.user.js`:
 
 ## ⚖️ License
 
-MIT — do whatever, just have fun. See [LICENSE](LICENSE).
+MIT — do whatever, just have fun. See <a href="LICENSE" target="_blank" rel="noopener noreferrer">LICENSE</a>.
 
 ---
 

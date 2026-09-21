@@ -19,13 +19,13 @@
 `vibe-site` 是一个 GitHub Pages 实验项目，页面**真正**保持空白。
 没有内容、没有资源，源代码里什么都没有。从终端启动到展开
 **Vibe Coding Manifesto** 的全部体验，都封装在
-[Tampermonkey](https://www.tampermonkey.net/) 用户脚本里。
+<a href="https://www.tampermonkey.net/" target="_blank" rel="noopener noreferrer">Tampermonkey</a> 用户脚本里。
 
 **访问 → 白色虚空。安装脚本 → 虚空开始说话。**
 
-**[⬇️ 安装脚本](https://spidychoipro.github.io/vibe-site/vibe.user.js)** — 安装 Tampermonkey 后在浏览器中打开即可看到安装界面。
+**⬇️ <a href="https://spidychoipro.github.io/vibe-site/vibe.user.js" target="_blank" rel="noopener noreferrer">安装脚本</a>** — 安装 Tampermonkey 后在浏览器中打开即可看到安装界面。
 
-[English](README.md) · [한국어](README.ko.md) · [中文](README.zh.md) · [日本語](README.ja.md)
+<a href="README.md" target="_blank" rel="noopener noreferrer">English</a> · <a href="README.ko.md" target="_blank" rel="noopener noreferrer">한국어</a> · <a href="README.zh.md" target="_blank" rel="noopener noreferrer">中文</a> · <a href="README.ja.md" target="_blank" rel="noopener noreferrer">日本語</a>
 
 </div>
 
@@ -37,26 +37,26 @@
 
 | 浏览器 | 一键安装 |
 |---|---|
-| Chrome | [Tampermonkey (Web Store)](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) |
-| Firefox | [Tampermonkey (Add-ons)](https://addons.mozilla.org/firefox/addon/tampermonkey/) |
-| Edge | [Tampermonkey (Add-ons)](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) |
-| Safari | [Tampermonkey (App Store)](https://apps.apple.com/app/tampermonkey-classic/id1482490089) |
+| Chrome | <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank" rel="noopener noreferrer">Tampermonkey (Web Store)</a> |
+| Firefox | <a href="https://addons.mozilla.org/firefox/addon/tampermonkey/" target="_blank" rel="noopener noreferrer">Tampermonkey (Add-ons)</a> |
+| Edge | <a href="https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd" target="_blank" rel="noopener noreferrer">Tampermonkey (Add-ons)</a> |
+| Safari | <a href="https://apps.apple.com/app/tampermonkey-classic/id1482490089" target="_blank" rel="noopener noreferrer">Tampermonkey (App Store)</a> |
 
 接着：
 
 | 步骤 | 点击 |
 |---|---|
 | 1 | 打开上面的商店链接 → 点**添加** |
-| 2 | 打开 **⬇️ [安装脚本](https://spidychoipro.github.io/vibe-site/vibe.user.js)** → 点**安装** |
-| 3 | 访问 → https://spidychoipro.github.io/vibe-site/，看着终端启动，小声惊叹 |
+| 2 | 打开 **⬇️ <a href="https://spidychoipro.github.io/vibe-site/vibe.user.js" target="_blank" rel="noopener noreferrer">安装脚本</a>** → 点**安装** |
+| 3 | 访问 → <a href="https://spidychoipro.github.io/vibe-site/" target="_blank" rel="noopener noreferrer">https://spidychoipro.github.io/vibe-site/</a>，看着终端启动，小声惊叹 |
 
 > **没有脚本？** 你会看到一片白页。这是正常的。这正是本意。
 
 ## 🌐 资源
 
-- **在线页面：** <https://spidychoipro.github.io/vibe-site/>
-- **用户脚本：** <https://spidychoipro.github.io/vibe-site/vibe.user.js>
-- **仓库：** <https://github.com/spidychoipro/vibe-site>
+- **在线页面：** <a href="https://spidychoipro.github.io/vibe-site/" target="_blank" rel="noopener noreferrer">https://spidychoipro.github.io/vibe-site/</a>
+- **用户脚本：** <a href="https://spidychoipro.github.io/vibe-site/vibe.user.js" target="_blank" rel="noopener noreferrer">https://spidychoipro.github.io/vibe-site/vibe.user.js</a>
+- **仓库：** <a href="https://github.com/spidychoipro/vibe-site" target="_blank" rel="noopener noreferrer">https://github.com/spidychoipro/vibe-site</a>
 
 ## 🧠 工作原理
 
@@ -130,7 +130,7 @@ npx serve .      # → http://localhost:8000
 
 ## ⚖️ 许可证
 
-MIT — 随意使用，开心就好。参见 [LICENSE](LICENSE)。
+MIT — 随意使用，开心就好。参见 <a href="LICENSE" target="_blank" rel="noopener noreferrer">LICENSE</a>。
 
 ---
 

@@ -1,17 +1,17 @@
 # vibe-site
 
-> [English](README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · 한국어
+> <a href="README.md" target="_blank" rel="noopener noreferrer">English</a> · <a href="README.zh.md" target="_blank" rel="noopener noreferrer">中文</a> · <a href="README.ja.md" target="_blank" rel="noopener noreferrer">日本語</a> · 한국어
 
 빈 화면 뒤에 숨겨 둔 Vibe Coding Manifesto 사이트입니다.
 
 스크립트 없이 방문하면 진짜 빈 페이지 하나만 나옵니다.
-[Tampermonkey](https://www.tampermonkey.net/) 유저스크립트를
+<a href="https://www.tampermonkey.net/" target="_blank" rel="noopener noreferrer">Tampermonkey</a> 유저스크립트를
 설치해야 터미널이 부팅되면서 콘텐츠가 나타납니다.
 
 ## 바로가기
 
-- 페이지: <https://spidychoipro.github.io/vibe-site/>
-- 유저스크립트: <https://spidychoipro.github.io/vibe-site/vibe.user.js>
+- 페이지: <a href="https://spidychoipro.github.io/vibe-site/" target="_blank" rel="noopener noreferrer">https://spidychoipro.github.io/vibe-site/</a>
+- 유저스크립트: <a href="https://spidychoipro.github.io/vibe-site/vibe.user.js" target="_blank" rel="noopener noreferrer">https://spidychoipro.github.io/vibe-site/vibe.user.js</a>
 
 ## 기능
 
@@ -26,17 +26,17 @@
 
 | 브라우저 | 원클릭 설치 |
 | --- | --- |
-| Chrome | [Tampermonkey (Web Store)](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) |
-| Firefox | [Tampermonkey (Add-ons)](https://addons.mozilla.org/firefox/addon/tampermonkey/) |
-| Edge | [Tampermonkey (Add-ons)](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) |
-| Safari | [Tampermonkey (App Store)](https://apps.apple.com/app/tampermonkey-classic/id1482490089) |
+| Chrome | <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank" rel="noopener noreferrer">Tampermonkey (Web Store)</a> |
+| Firefox | <a href="https://addons.mozilla.org/firefox/addon/tampermonkey/" target="_blank" rel="noopener noreferrer">Tampermonkey (Add-ons)</a> |
+| Edge | <a href="https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd" target="_blank" rel="noopener noreferrer">Tampermonkey (Add-ons)</a> |
+| Safari | <a href="https://apps.apple.com/app/tampermonkey-classic/id1482490089" target="_blank" rel="noopener noreferrer">Tampermonkey (App Store)</a> |
 
 그 다음:
 
 | 단계 | 클릭 |
 | --- | --- |
 | 1 | 위 스토어 링크 열기 → **추가** 클릭 |
-| 2 | **⬇️ [스크립트 설치](https://spidychoipro.github.io/vibe-site/vibe.user.js)** 열기 → **설치** 클릭 |
+| 2 | **⬇️ <a href="https://spidychoipro.github.io/vibe-site/vibe.user.js" target="_blank" rel="noopener noreferrer">스크립트 설치</a>** 열기 → **설치** 클릭 |
 | 3 | 사이트 접속 → 터미널 부팅 & 매니페스토 표시 |
 
 ## 동작 원리
@@ -99,4 +99,4 @@ Tampermonkey에 로컬 버전 스크립트를 먼저 설치해야 합니다.
 
 ## 라이선스
 
-MIT License — [LICENSE](LICENSE) 참고.
+MIT License — <a href="LICENSE" target="_blank" rel="noopener noreferrer">LICENSE</a> 참고.
