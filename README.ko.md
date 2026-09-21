@@ -58,7 +58,8 @@
 ```
 vibe-site/
 ├── index.html          # 일부러 비워 둔 빈 페이지
-├── vibe.user.js        # 유저스크립트 — 콘텐츠 전부가 여기 들어 있음
+├── vibe.user.js        # 유저스크립트 (배포용) — localhost 없음, 자동 업데이트
+├── vibe.dev.user.js    # 유저스크립트 (로컬 개발용) — localhost:8000 추가, 자동 업데이트 없음
 ├── README.md           # 문서 (English)
 ├── README.ko.md        # 문서 (한국어) — 지금 이 문서
 ├── README.zh.md        # 문서 (中文)
@@ -68,15 +69,22 @@ vibe-site/
 
 ## 로컬 개발
 
-`@match localhost:8000`이 이미 포함되어 있어서 로컬 서버에서 바로 확인할 수 있습니다.
+배포용 `vibe.user.js`는 GitHub Pages URL에만 매칭되며 `localhost`는 건드리지 않습니다.
+로컬에서 테스트할 때는 개발용 빌드를 사용하세요.
+
+| 스크립트 | 매칭 대상 |
+| --- | --- |
+| `vibe.user.js` | GitHub Pages만 |
+| **`vibe.dev.user.js`** | GitHub Pages **+** `localhost:8000` / `127.0.0.1:8000` |
+
+프로젝트를 서빙하고 **⬇️ <a href="https://spidychoipro.github.io/vibe-site/vibe.dev.user.js" target="_blank" rel="noopener noreferrer">vibe.dev.user.js</a>** 를 Tampermonkey에 설치하면 됩니다.
 
 ```bash
 npx serve .    # → http://localhost:8000
 ```
 
-Tampermonkey에 로컬 버전 스크립트를 먼저 설치해야 합니다.
-
-스크립트는 **진짜 빈 페이지에서만** 활성화되므로, 8000 포트의 다른 프로젝트를 덮어쓰지 않습니다.
+개발용 빌드에는 `@updateURL`/`@downloadURL`이 없어서 자동 업데이트되지 않습니다.
+두 빌드 모두 **진짜 빈 페이지에서만** 활성화되므로, 8000 포트의 다른 프로젝트를 덮어쓰지 않습니다.
 
 ### 콘텐츠 수정
 
@@ -92,6 +100,7 @@ Tampermonkey에 로컬 버전 스크립트를 먼저 설치해야 합니다.
 > 실제 사고가 아니라 설계 검토 내용입니다.
 
 - **외부 통신 없음**: `@require` 없이 `fetch`/`eval`도 사용하지 않아 페이지 밖으로 나가는 요청이 없습니다.
+- **신뢰 경계 축소**: 배포본은 `https://spidychoipro.github.io/vibe-site/`에만 매칭되며 `localhost`가 없습니다. 로컬 개발은 자동 업데이트되지 않는 별도 `vibe.dev.user.js`를 사용합니다.
 - **프레임 차단**: `@noframes`로 iframe 내부 실행을 막습니다.
 - **빈 페이지 확인**: `isTargetBlank` 검사로 실제로 비어 있는 화면에서만 동작해 다른 로컬 서비스를 건드리지 않습니다.
 - **공급망 주의**: 업데이트는 이 저장소를 통해 내려옵니다. 저장소 쓰기 권한이 있으면 모든 설치자에게 코드를 배포할 수 있으므로, `spidychoipro` 계정(2FA)이 유일한 신뢰 지점입니다.

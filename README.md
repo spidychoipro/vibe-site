@@ -86,7 +86,8 @@ only to those in on the secret.
 ```
 vibe-site/
 ├── index.html          # Intentionally empty white page
-├── vibe.user.js        # Userscript — the entire experience lives here
+├── vibe.user.js        # Userscript (deployed) — no localhost, auto-updates
+├── vibe.dev.user.js    # Userscript (local dev) — adds localhost:8000, no auto-update
 ├── README.md           # Docs (English) — you are here
 ├── README.ko.md        # Docs (한국어)
 ├── README.zh.md        # Docs (中文)
@@ -96,15 +97,22 @@ vibe-site/
 
 ## 💻 Local Development
 
-Serve the project and rely on the bundled `@match localhost:8000`:
+The deployed `vibe.user.js` matches the GitHub Pages URL **only** — it never
+touches `localhost`. For local iteration, use the dev build instead:
+
+| Script | Matches |
+|---|---|
+| `vibe.user.js` | GitHub Pages only |
+| **`vibe.dev.user.js`** | GitHub Pages **+** `localhost:8000` / `127.0.0.1:8000` |
+
+Serve the project and install **⬇️ <a href="https://spidychoipro.github.io/vibe-site/vibe.dev.user.js" target="_blank" rel="noopener noreferrer">vibe.dev.user.js</a>** in Tampermonkey:
 
 ```bash
 npx serve .      # → http://localhost:8000
 ```
 
-Then install the local copy of the script in Tampermonkey.
-
-The script only activates on genuinely blank pages — it will **not** hijack
+The dev build has no `@updateURL`/`@downloadURL`, so it never auto-updates.
+Both variants only activate on genuinely blank pages — they will **not** hijack
 other apps you happen to run on port 8000.
 
 ### Editing Content
@@ -122,6 +130,9 @@ All content is plain data at the top of `vibe.user.js`:
 
 - **No network egress:** the script uses `@grant none`, declares no `@require`,
   and performs no `fetch`/`eval`. It touches nothing outside the page.
+- **Narrow trust boundary:** the deployed script matches **only**
+  `https://spidychoipro.github.io/vibe-site/` — no `localhost`. Local development
+  uses a separate `vibe.dev.user.js` that never auto-updates.
 - **Frame isolation:** `@noframes` prevents execution inside embedded iframes.
 - **True-blank guard:** a runtime check (`isTargetBlank`) aborts unless the page
   is genuinely empty, preventing accidental takeover of other local services.

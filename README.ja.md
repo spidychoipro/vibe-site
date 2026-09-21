@@ -87,7 +87,8 @@
 ```
 vibe-site/
 ├── index.html          # 意図的に空にしたページ
-├── vibe.user.js        # ユーザースクリプト — 体験のすべてがここにある
+├── vibe.user.js        # ユーザースクリプト（配布版） — localhost なし、自動更新あり
+├── vibe.dev.user.js    # ユーザースクリプト（ローカル開発） — localhost:8000 追加、自動更新なし
 ├── README.md           # ドキュメント (English)
 ├── README.ko.md        # ドキュメント (한국어)
 ├── README.zh.md        # ドキュメント (中文)
@@ -97,17 +98,23 @@ vibe-site/
 
 ## 💻 ローカル開発
 
-プロジェクトをローカルで配信すれば、スクリプトに組み込み済みの
-`@match localhost:8000` ルールでそのまま確認できる：
+配布版 `vibe.user.js` は GitHub Pages の URL にのみマッチし、`localhost` には
+触れません。ローカルで試すときは開発版を使います：
+
+| スクリプト | マッチ範囲 |
+|---|---|
+| `vibe.user.js` | GitHub Pages のみ |
+| **`vibe.dev.user.js`** | GitHub Pages **+** `localhost:8000` / `127.0.0.1:8000` |
+
+プロジェクトを配信して、**⬇️ <a href="https://spidychoipro.github.io/vibe-site/vibe.dev.user.js" target="_blank" rel="noopener noreferrer">vibe.dev.user.js</a>** を Tampermonkey にインストールします：
 
 ```bash
 npx serve .      # → http://localhost:8000
 ```
 
-先に Tampermonkey へローカル版のスクリプトをインストールしておくこと。
-
-スクリプトは**本当に空白のページでのみ**有効になる。ポート 8000 でたまたま
-動いている他アプリを乗っ取ることはない。
+開発版には `@updateURL`/`@downloadURL` がないため、自動更新されません。
+両バージョンとも**本当に空白のページでのみ**有効になります。ポート 8000 で
+たまたま動いている他アプリを乗っ取ることはありません。
 
 ### コンテンツの編集
 
@@ -124,6 +131,9 @@ npx serve .      # → http://localhost:8000
 
 - **外部通信なし:** `@grant none`、`@require` なし、`fetch`/`eval` なし。
   ページの外には一切触れない。
+- **信頼境界の縮小:** 配布版は `https://spidychoipro.github.io/vibe-site/`
+  にのみマッチし、`localhost` を含まない。ローカル開発は自動更新されない
+  別の `vibe.dev.user.js` を使う。
 - **フレーム隔離:** `@noframes` により、埋め込み iframe 内での実行を防ぐ。
 - **真の空白ガード:** `isTargetBlank` の実行時チェックで、ページが本当に空
   の場合のみ動作させ、他のローカルサービスの誤動作を防ぐ。

@@ -84,7 +84,8 @@
 ```
 vibe-site/
 ├── index.html          # 刻意留空的页面
-├── vibe.user.js        # 用户脚本 — 全部体验都在这里
+├── vibe.user.js        # 用户脚本（部署版） — 不含 localhost，自动更新
+├── vibe.dev.user.js    # 用户脚本（本地开发） — 追加 localhost:8000，不自动更新
 ├── README.md           # 文档 (English)
 ├── README.ko.md        # 文档 (한국어)
 ├── README.zh.md        # 文档 (中文) — 你现在看的这份
@@ -94,15 +95,22 @@ vibe-site/
 
 ## 💻 本地开发
 
-在本地启动项目，利用脚本中自带的 `@match localhost:8000` 直接验证：
+部署版 `vibe.user.js` 只匹配 GitHub Pages 的 URL，不会碰 `localhost`。
+本地联调时请使用开发版：
+
+| 脚本 | 匹配范围 |
+|---|---|
+| `vibe.user.js` | 仅 GitHub Pages |
+| **`vibe.dev.user.js`** | GitHub Pages **+** `localhost:8000` / `127.0.0.1:8000` |
+
+先启动项目，再把 **⬇️ <a href="https://spidychoipro.github.io/vibe-site/vibe.dev.user.js" target="_blank" rel="noopener noreferrer">vibe.dev.user.js</a>** 安装到 Tampermonkey：
 
 ```bash
 npx serve .      # → http://localhost:8000
 ```
 
-先在 Tampermonkey 中安装一份本地版本的脚本。
-
-脚本只在**真正空白的页面**上激活——不会劫持你在 8000 端口偶然运行的其他应用。
+开发版没有 `@updateURL`/`@downloadURL`，因此不会自动更新。
+两个版本都只在**真正空白的页面**上激活——不会劫持你在 8000 端口偶然运行的其他应用。
 
 ### 编辑内容
 
@@ -119,6 +127,8 @@ npx serve .      # → http://localhost:8000
 
 - **无网络外联：** 脚本使用 `@grant none`，没有 `@require`，也没有
   `fetch`/`eval`。不会触碰页面之外的任何东西。
+- **收窄信任边界：** 部署版只匹配 `https://spidychoipro.github.io/vibe-site/`，
+  不包含 `localhost`。本地开发使用单独的 `vibe.dev.user.js`，该版本不会自动更新。
 - **框架隔离：** `@noframes` 阻止在嵌入的 iframe 中执行。
 - **真-空白守卫：** `isTargetBlank` 运行时检查确保只有在页面真正为空时才
   运行，防止意外接管其他本地服务。

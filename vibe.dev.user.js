@@ -1,22 +1,24 @@
 // ==UserScript==
-// @name         vibe-site unlocker
+// @name         vibe-site unlocker (dev)
 // @namespace    https://github.com/spidychoipro/vibe-site
 // @version      0.3.0
-// @description  빈 페이지 뒤에 숨어있는 Vibe Coding Manifesto를 드러내는 스크립트. 설치하면 마법이 일어난다.
+// @description  개발 전용. localhost:8000에서 로컬 검증할 때만 설치. 배포본(vibe.user.js)에는 localhost가 포함되지 않는다.
 // @author       spidychoipro
 // @match        https://spidychoipro.github.io/vibe-site/
+// @match        http://localhost:8000/*
+// @match        http://127.0.0.1:8000/*
 // @run-at       document-idle
 // @grant        none
 // @noframes
-// @downloadURL  https://spidychoipro.github.io/vibe-site/vibe.user.js
-// @updateURL    https://spidychoipro.github.io/vibe-site/vibe.user.js
 // ==/UserScript==
 
 (function () {
   'use strict';
 
   const HOSTS = [
-    { origin: 'https://spidychoipro.github.io', pathname: '/vibe-site/' }
+    { origin: 'https://spidychoipro.github.io', pathname: '/vibe-site/' },
+    { origin: 'http://localhost:8000', pathname: '/' },
+    { origin: 'http://127.0.0.1:8000', pathname: '/' }
   ];
 
   const CSS = `
